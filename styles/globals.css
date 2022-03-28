@@ -18,3 +18,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.get-started-instructions .prose p:not(.not-prose) {
+  font-weight: 600;
+  margin-bottom: .65rem !important;
+}
+
+.get-started-instructions .prose pre {
+  margin-top: .65rem !important;
+}
+
+.get-started-instructions code {
+  font-weight: 600;
+}

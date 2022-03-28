@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronRightIcon } from "@heroicons/react/solid";
-import FAQ from "../components/faq"
+import FAQ from "../components/faq";
 
 export default function Home() {
   return (
@@ -14,25 +15,30 @@ export default function Home() {
 
       <main>
         {/* Hero */}
-        <div className="bg-gray-700 pb-8 sm:pb-12 lg:pb-12">
+        <section className="bg-gray-700 pb-8 sm:pb-12 lg:pb-12">
           <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
             <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
               <div>
                 <div>
-                  <Image
+                  {/* <Image
                     src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
                     alt="Workflow"
                     dangerouslyallowsvg="true"
                     height={48}
                     width={44}
-                  />
+                  /> */}
+                  <div className="bg-indigo-600 text-white font-medium rounded text-sm px-5 py-1.5 inline-block">
+                    Beta!
+                  </div>
                 </div>
-                <div className="mt-16 sm:max-w-xl">
+                <div className="mt-4 sm:max-w-xl">
                   <h1 className="text-4xl font-extrabold text-white tracking-tight sm:text-5xl">
                     A Simple Discord Bot for Sharing OSRS Gains
                   </h1>
                   <p className="mt-6 text-xl text-gray-400">
-                    Automatically shares skill levels, clue scroll completions, and boss KC&apos;s for players you track to create a close-knit OSRS Discord Community.
+                    Automatically shares skill levels, clue scroll completions,
+                    and boss KC&apos;s for players you track to create a
+                    close-knit OSRS Discord Community.
                   </p>
                 </div>
                 {/* button row */}
@@ -47,7 +53,7 @@ export default function Home() {
                   </div>
                   <div className="rounded-md shadow sm:ml-3">
                     <a
-                      href="#"
+                      href="https://bit.ly/osrs-discord-bot"
                       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 mt-3 sm:mt-0"
                     >
                       <span className="mr-3">Add to Discord</span>
@@ -93,10 +99,153 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         {/* End Hero */}
 
-        {/* Another section */}
+        {/* Get Started */}
+        <section className="bg-white">
+          <div
+            className="max-w-3xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-0"
+            id="getstarted"
+          >
+            <div className="text-center pb-7 border-b border-gray-100">
+              <h1 className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tighter lg:text-6xl">
+                Getting Started
+              </h1>
+              <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+                I know, you&apos;re excited! However, take a moment, breathe,
+                and follow the instructions to get the most out of the bot!
+              </p>
+            </div>
+            <div className="get-started-instructions">
+              {/* Step 1 */}
+              <div className="flex flex-col md:flex-row mt-10 justify-center">
+                <div className="w-1/12 self-center mb-3">
+                  <span className="bg-indigo-700 w-11 h-11 rounded-full flex justify-center items-center text-white font-bold mt-2">
+                    1
+                  </span>
+                </div>
+                <div className="bg-gray-100 px-6 py-4 rounded w-full sm:w-11/12 prose lg:prose-lg">
+                  <p className="mb-0 not-prose font-semibold">
+                    <a
+                      className="text-blue-600 font-bold"
+                      target="_blank"
+                      href="https://bit.ly/osrs-discord-bot"
+                      rel="noreferrer"
+                    >
+                      Add the bot
+                    </a>{" "}
+                    to your Discord server!
+                  </p>
+                </div>
+              </div>
+              {/* Step 2 */}
+              <div className="flex flex-col md:flex-row mt-6 justify-center">
+                <div className="w-1/12 self-center mb-3">
+                  <span className="bg-indigo-700 w-11 h-11 rounded-full flex justify-center items-center text-white font-bold mt-2">
+                    2
+                  </span>
+                </div>
+                <div className="bg-gray-100 px-6 py-4 rounded w-full sm:w-11/12 prose lg:prose-lg">
+                  <p>Navigate to your desired text channel and subscribe:</p>
+                  <pre>
+                    <code>!osrs subscribe</code>
+                  </pre>
+                </div>
+              </div>
+              {/* Step 3 */}
+              <div className="flex flex-col md:flex-row mt-6 justify-center">
+                <div className="w-1/12 self-center mb-3">
+                  <span className="bg-indigo-700 w-11 h-11 rounded-full flex justify-center items-center text-white font-bold mt-2">
+                    3
+                  </span>
+                </div>
+                <div className="bg-gray-100 px-6 py-4 rounded w-full sm:w-11/12 prose lg:prose-lg">
+                  <p>Add the RSN&apos;s you want to track updates on</p>
+                  <pre className="mb-4">
+                    <code>!osrs add &#123;rsn&#125;</code>
+                  </pre>
+                  <i>
+                    Note, if the RSN has spaces in it, use a &quot;<b>+</b>
+                    &quot; in place of a space:
+                  </i>
+                  <pre>
+                    <code>!osrs add zezima+is+lord</code>
+                  </pre>
+                </div>
+              </div>
+              {/* Step 4 */}
+              <div className="flex flex-col md:flex-row mt-10 justify-center">
+                <div className="w-1/12 self-center mb-3">
+                  <span className="bg-indigo-700 w-11 h-11 rounded-full flex justify-center items-center text-white font-bold mt-2">
+                    4
+                  </span>
+                </div>
+                <div className="bg-gray-100 px-6 py-4 rounded w-full sm:w-11/12 prose lg:prose-lg">
+                  <p className="font-semibold">All done!🎉</p>
+                  <i>The bot reports updates every 2 hours!</i>
+                </div>
+              </div>
+            </div>
+            {/* Command Push */}
+            <div className="text-center mt-12">
+              Now that you're all started, checkout the{" "}
+              <Link href="/#commands">
+                <a>commands</a>
+              </Link>{" "}
+              to take full advantage of OSRS Buddy!
+            </div>
+          </div>
+        </section>
+        {/* End Get Started */}
+
+        {/* Commands */}
+        <section className="bg-indigo-700">
+          <div className="max-w-7xl mx-auto py-14 px-4 sm:px-6 lg:py-16 lg:px-8" id="commands">
+            <div className="lg:grid lg:grid-cols-3 lg:gap-12">
+              <div>
+                <h1 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-5xl">
+                  Commands
+                </h1>
+                <p className="mt-3 text-md lg:text-lg text-indigo-300">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Neque blanditiis sapiente quidem ipsam.
+                </p>
+              </div>
+              <div className="mt-12 lg:mt-0 lg:col-span-2">
+                <dl className="space-y-12 prose">
+                  <div>
+                    <pre>
+                      <code>!osrs subscribe</code>
+                    </pre>
+                    <pre>
+                      <code>!osrs unsubscribe</code>
+                    </pre>
+                    <pre>
+                      <code>!osrs list</code>
+                    </pre>
+                    <pre>
+                      <code>!osrs add &#123;rsn&#125;</code>
+                    </pre>
+                    <pre>
+                      <code>!osrs remove &#123;rsn&#125;</code>
+                    </pre>
+                    <pre>
+                      <code>!osrs when</code>
+                    </pre>
+                    <pre>
+                      <code>!osrs status</code>
+                    </pre>
+                    <pre>
+                      <code>!osrs donate</code>
+                    </pre>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* End Commands */}
 
         {/* FAQ */}
         <FAQ />
