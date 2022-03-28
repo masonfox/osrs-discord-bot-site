@@ -189,7 +189,7 @@ export default function Home() {
             </div>
             {/* Command Push */}
             <div className="text-center mt-12">
-              Now that you're all started, checkout the{" "}
+              Now that you&apos;re all started, checkout the{" "}
               <Link href="/#commands">
                 <a>commands</a>
               </Link>{" "}
