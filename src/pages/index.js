@@ -161,7 +161,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="bg-gray-100 px-6 py-4 rounded w-full sm:w-11/12 prose lg:prose-lg">
-                  <p>Add the RSN&apos;s you want to track updates on</p>
+                  <p>Add the RSN&apos;s you want to track!</p>
                   <pre className="mb-4">
                     <code>!osrs add &#123;rsn&#125;</code>
                   </pre>
