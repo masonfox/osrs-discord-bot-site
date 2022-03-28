@@ -31,3 +31,15 @@ a {
 .get-started-instructions code {
   font-weight: 600;
 }
+
+.inline-code {
+  @apply text-red-500 bg-gray-100 px-1.5 py-1 rounded font-medium;
+}
+
+.command-block .command {
+  @apply bg-gray-800 py-3 px-4 rounded-tl rounded-bl text-gray-300 font-medium font-mono;
+}
+
+.command-block .command-description {
+  @apply bg-gray-300 py-2 px-4 rounded-tr rounded-br;
+}
