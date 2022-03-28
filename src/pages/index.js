@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRightIcon } from "@heroicons/react/solid";
 import FAQ from "../components/faq";
+import Commands from "../components/commands";
 
 export default function Home() {
   return (
@@ -200,52 +200,7 @@ export default function Home() {
         {/* End Get Started */}
 
         {/* Commands */}
-        <section className="bg-indigo-700">
-          <div className="max-w-7xl mx-auto py-14 px-4 sm:px-6 lg:py-16 lg:px-8" id="commands">
-            <div className="lg:grid lg:grid-cols-3 lg:gap-12">
-              <div>
-                <h1 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-5xl">
-                  Commands
-                </h1>
-                <p className="mt-3 text-md lg:text-lg text-indigo-300">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Neque blanditiis sapiente quidem ipsam.
-                </p>
-              </div>
-              <div className="mt-12 lg:mt-0 lg:col-span-2">
-                <dl className="space-y-12 prose">
-                  <div>
-                    <pre>
-                      <code>!osrs subscribe</code>
-                    </pre>
-                    <pre>
-                      <code>!osrs unsubscribe</code>
-                    </pre>
-                    <pre>
-                      <code>!osrs list</code>
-                    </pre>
-                    <pre>
-                      <code>!osrs add &#123;rsn&#125;</code>
-                    </pre>
-                    <pre>
-                      <code>!osrs remove &#123;rsn&#125;</code>
-                    </pre>
-                    <pre>
-                      <code>!osrs when</code>
-                    </pre>
-                    <pre>
-                      <code>!osrs status</code>
-                    </pre>
-                    <pre>
-                      <code>!osrs donate</code>
-                    </pre>
-                  </div>
-                </dl>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* End Commands */}
+        <Commands />
 
         {/* FAQ */}
         <FAQ />
