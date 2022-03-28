@@ -22,7 +22,7 @@ export default function Home() {
                   <Image
                     src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
                     alt="Workflow"
-                    dangerouslyAllowSVG="true"
+                    dangerouslyallowsvg="true"
                     height={48}
                     width={44}
                   />
@@ -32,7 +32,7 @@ export default function Home() {
                     A Simple Discord Bot for Sharing OSRS Gains
                   </h1>
                   <p className="mt-6 text-xl text-gray-400">
-                    Automatically shares skill levels, clue scroll completions, and boss KC's for players you track to create a close-knit OSRS Discord Community.
+                    Automatically shares skill levels, clue scroll completions, and boss KC&apos;s for players you track to create a close-knit OSRS Discord Community.
                   </p>
                 </div>
                 {/* button row */}
