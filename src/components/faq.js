@@ -6,11 +6,16 @@ const faqs = [
   {
     question: "How often does the bot generate progress updates?",
     answer:
-      "<p>It runs on a 2-hour cadence. You can see the next time it will run by using the <span class='inline-code'>!osrs when</span> command. Note, the bot's cadence can be altered from time-to-time.</p>"
+      "<p>It runs on a 2-hour cadence. You can see the next time it will run by using the <span class='inline-code'>!osrs when</span> command. Note, the bot's cadence can be altered from time-to-time depending on redeploys.</p>"
   },
   {
-    question: "Yes?",
-    answer: "Yes",
+    question: "How do I rename a player I am tracking?",
+    answer: "<p>This can be done removing the player via their old name using the <span class='inline-code'>!osrs remove {old name}</span> and then adding the player by their new name through the <span class='inline-code'>!osrs add {new name}</span> commands.</p><br/><p>While there is an open <a href='https://github.com/masonfox/osrs-discord-bot/issues/4'>issue</a> for this feature, it is unlikely to be developed due to the complexity and cascading effects against the data set. The players list is shared amongst all bot users, so granting overwrite-like functionality has dangerous potential. Many other systems similar to this simply do not allow it or have an approval process associated with it. </p>",
+  },
+  {
+    question: "I have a bug or a feature request: how do I submit it?",
+    answer:
+      "<p>First off - thank you! Please utilize the <a href='https://github.com/masonfox/osrs-discord-bot/issues'>Github repo's issue section</a> to submit either of these.</p><br><p>Also, if you're a developer yourself and you'd like to contribute, please make a PR! Thanks for your interest in making the bot better!</p>"
   },
   // More questions...
 ];
