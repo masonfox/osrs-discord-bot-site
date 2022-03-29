@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
 .app-brand {
   font-family: Proxima Nova;
 }
+*/
 
 .get-started-instructions .prose p:not(.not-prose) {
   font-weight: 600;
