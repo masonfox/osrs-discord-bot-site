@@ -117,15 +117,15 @@ export default function Home() {
                 and follow the instructions to get the most out of the bot!
               </p>
             </div>
-            <div className="get-started-instructions">
+            <div className="get-started-instructions w-full text-center md:text-left">
               {/* Step 1 */}
               <div className="flex flex-col md:flex-row mt-10 justify-center">
-                <div className="w-1/12 self-center mb-3">
-                  <span className="bg-indigo-700 w-11 h-11 rounded-full flex justify-center items-center text-white font-bold mt-2 drop-shadow">
+                <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-50">
+                  <span className="bg-indigo-700 text-lg w-11 h-11 rounded-full flex justify-center items-center text-white font-bold drop-shadow">
                     1
                   </span>
                 </div>
-                <div className="bg-gray-100 px-6 py-4 rounded w-full sm:w-11/12 prose lg:prose-lg drop-shadow">
+                <div className="bg-gray-100 px-6 pb-4 pt-9 md:pt-4 rounded w-full self-center md:w-11/12 prose lg:prose-lg drop-shadow">
                   <p className="mb-0 not-prose font-semibold">
                     <a
                       className="text-blue-600 font-bold"
@@ -141,12 +141,12 @@ export default function Home() {
               </div>
               {/* Step 2 */}
               <div className="flex flex-col md:flex-row mt-6 justify-center">
-                <div className="w-1/12 self-center mb-3">
-                  <span className="bg-indigo-700 w-11 h-11 rounded-full flex justify-center items-center text-white font-bold mt-2 drop-shadow">
+                <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-50">
+                  <span className="bg-indigo-700 text-lg w-11 h-11 rounded-full flex justify-center items-center text-white font-bold drop-shadow">
                     2
                   </span>
                 </div>
-                <div className="bg-gray-100 px-6 py-4 rounded w-full sm:w-11/12 prose lg:prose-lg drop-shadow">
+                <div className="bg-gray-100 px-6 pb-4 pt-9 md:pt-4 rounded w-full self-center md:w-11/12 prose lg:prose-lg drop-shadow">
                   <p>Navigate to your desired text channel and subscribe:</p>
                   <pre>
                     <code>!osrs subscribe</code>
@@ -155,12 +155,12 @@ export default function Home() {
               </div>
               {/* Step 3 */}
               <div className="flex flex-col md:flex-row mt-6 justify-center">
-                <div className="w-1/12 self-center mb-3">
-                  <span className="bg-indigo-700 w-11 h-11 rounded-full flex justify-center items-center text-white font-bold mt-2 drop-shadow">
+                <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-50">
+                  <span className="bg-indigo-700 text-lg w-11 h-11 rounded-full flex justify-center items-center text-white font-bold drop-shadow">
                     3
                   </span>
                 </div>
-                <div className="bg-gray-100 px-6 py-4 rounded w-full sm:w-11/12 prose lg:prose-lg drop-shadow">
+                <div className="bg-gray-100 px-6 pb-4 pt-9 md:pt-4 rounded w-full self-center md:w-11/12 prose lg:prose-lg drop-shadow">
                   <p>Add the RSN&apos;s you want to track!</p>
                   <pre className="mb-4">
                     <code>!osrs add &#123;rsn&#125;</code>
@@ -176,12 +176,12 @@ export default function Home() {
               </div>
               {/* Step 4 */}
               <div className="flex flex-col md:flex-row mt-10 justify-center">
-                <div className="w-1/12 self-center mb-3">
-                  <span className="bg-indigo-700 w-11 h-11 rounded-full flex justify-center items-center text-white font-bold mt-2 drop-shadow">
+                <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-50">
+                  <span className="bg-indigo-700 text-lg w-11 h-11 rounded-full flex justify-center items-center text-white font-bold drop-shadow">
                     4
                   </span>
                 </div>
-                <div className="bg-gray-100 px-6 py-4 rounded w-full sm:w-11/12 prose lg:prose-lg drop-shadow">
+                <div className="bg-gray-100 px-6 pb-4 pt-9 md:pt-4 rounded w-full self-center md:w-11/12 prose lg:prose-lg drop-shadow">
                   <p className="font-semibold">All done!🎉</p>
                   <i>The bot reports updates every 2 hours!</i>
                 </div>
