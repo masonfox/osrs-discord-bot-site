@@ -52,7 +52,7 @@ const commandList = [
   {
     command: "!osrs donate",
     description:
-      "❤️ If you feel compelled, I do accept donations as a means to support the bot! This is a one-man side project and anything helps to assist with hosting and everything else that makes this bot possible!",
+      "❤️ Provides information about how you can donate!",
     examples: [],
   },
 ];
