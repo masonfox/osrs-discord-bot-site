@@ -1,12 +1,12 @@
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Get Started", href: "/#getstarted", current: false },
-  { name: "Commands", href: "/#commands", current: false },
-  { name: "FAQ", href: "/#faq", current: false },
-  { name: "About", href: "/#about", current: false },
+  { name: "Home", href: "/" },
+  { name: "Get Started", href: "/#getstarted" },
+  { name: "Commands", href: "/#commands" },
+  { name: "FAQ", href: "/#faq" },
+  { name: "About", href: "/#about" },
 ];
 
 export default function Layout({ children }) {
@@ -16,5 +16,5 @@ export default function Layout({ children }) {
       <main>{children}</main>
       <Footer navigation={navigation} />
     </>
-  )
+  );
 }

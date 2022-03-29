@@ -4,20 +4,18 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { PlusSmIcon } from "@heroicons/react/solid";
 import Image from "next/image";
-
-const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-];
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Navbar = ({ navigation }) => (
-  <Disclosure as="nav" className="bg-gray-800">
+const Navbar = ({ navigation }) => {
+  const { asPath } = useRouter();
+
+  return (
+  <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-50 ">
     {({ open }) => (
       <>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,19 +53,19 @@ const Navbar = ({ navigation }) => (
               </div>
               <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                 {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "px-3 py-2 rounded-md text-sm font-medium"
-                    )}
-                    aria-current={item.current ? "page" : undefined}
-                  >
-                    {item.name}
-                  </a>
+                  <Link key={item.name} href={item.href}>
+                    <a
+                      className={classNames(
+                        (asPath == item.href)
+                          ? "bg-gray-900 text-white"
+                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        "px-3 py-2 rounded-md text-sm font-medium"
+                      )}
+                      aria-current={item.current ? "page" : undefined}
+                    >
+                      {item.name}
+                    </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -128,6 +126,6 @@ const Navbar = ({ navigation }) => (
       </>
     )}
   </Disclosure>
-);
+)}
 
 export default Navbar;
