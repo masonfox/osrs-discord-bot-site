@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const HomeHero = () => (
   <section className="bg-gray-700 pb-8 sm:pb-12 lg:pb-12">
     <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
@@ -28,12 +30,11 @@ const HomeHero = () => (
           {/* button row */}
           <div className="mt-10 sm:flex">
             <div className="rounded-md shadow">
-              <a
-                href="#"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-100 md:py-4 md:text-lg md:px-10"
-              >
-                Read More
-              </a>
+              <Link href="/#features">
+                <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-100 md:py-4 md:text-lg md:px-10">
+                  Read More
+                </a>
+              </Link>
             </div>
             <div className="rounded-md shadow sm:ml-3">
               <a
