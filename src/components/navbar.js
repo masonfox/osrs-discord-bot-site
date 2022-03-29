@@ -1,20 +1,10 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
-import { PlusSmIcon } from "@heroicons/react/solid";
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { classNames } from "../utilities";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
-const Navbar = ({ navigation }) => {
-  const { asPath } = useRouter();
-
-  return (
+const Navbar = ({ navigation, activeHref }) => (
   <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-50 ">
     {({ open }) => (
       <>
@@ -56,7 +46,7 @@ const Navbar = ({ navigation }) => {
                   <Link key={item.name} href={item.href}>
                     <a
                       className={classNames(
-                        (asPath == item.href)
+                        activeHref == item.href
                           ? "bg-gray-900 text-white"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
                         "px-3 py-2 rounded-md text-sm font-medium"
@@ -126,6 +116,6 @@ const Navbar = ({ navigation }) => {
       </>
     )}
   </Disclosure>
-)}
+);
 
 export default Navbar;

@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import { useRouter } from "next/router";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -10,9 +12,23 @@ const navigation = [
 ];
 
 export default function Layout({ children }) {
+  const router = useRouter();
+  const [activeHref, setActiveHref] = useState("/");
+
+  useEffect(() => {
+    const handleRouteChange = (url) => setActiveHref(url)
+
+    // handle route update
+    router.events.on('hashChangeComplete', handleRouteChange)
+
+    return () => {
+      router.events.off('hashChangeComplete', handleRouteChange)
+    }
+  }, [])
+
   return (
     <>
-      <Navbar navigation={navigation} />
+      <Navbar navigation={navigation} activeHref={activeHref} />
       <main>{children}</main>
       <Footer navigation={navigation} />
     </>
