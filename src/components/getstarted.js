@@ -19,7 +19,7 @@ const GetStarted = () => (
       <div className="get-started-instructions w-full text-center md:text-left">
         {/* Step 1 */}
         <div className="flex flex-col md:flex-row mt-10 justify-center">
-          <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-50">
+          <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-10">
             <span className="bg-indigo-700 text-lg w-11 h-11 rounded-full flex justify-center items-center text-white font-bold drop-shadow">
               1
             </span>
@@ -40,7 +40,7 @@ const GetStarted = () => (
         </div>
         {/* Step 2 */}
         <div className="flex flex-col md:flex-row mt-6 justify-center">
-          <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-50">
+          <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-10">
             <span className="bg-indigo-700 text-lg w-11 h-11 rounded-full flex justify-center items-center text-white font-bold drop-shadow">
               2
             </span>
@@ -54,7 +54,7 @@ const GetStarted = () => (
         </div>
         {/* Step 3 */}
         <div className="flex flex-col md:flex-row mt-6 justify-center">
-          <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-50">
+          <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-10">
             <span className="bg-indigo-700 text-lg w-11 h-11 rounded-full flex justify-center items-center text-white font-bold drop-shadow">
               3
             </span>
@@ -75,7 +75,7 @@ const GetStarted = () => (
         </div>
         {/* Step 4 */}
         <div className="flex flex-col md:flex-row mt-10 justify-center">
-          <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-50">
+          <div className="w-auto self-center md:w-1/12 -mb-5 md:mb-0 z-10">
             <span className="bg-indigo-700 text-lg w-11 h-11 rounded-full flex justify-center items-center text-white font-bold drop-shadow">
               4
             </span>
