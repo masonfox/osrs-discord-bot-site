@@ -3,9 +3,9 @@ import Link from "next/link";
 
 import HomeHero from "../components/homehero";
 import GetStarted from "../components/getstarted";
-import Link from "next/link";
-import FAQ from "../components/faq";
+import Features from "../components/features";
 import Commands from "../components/commands";
+import FAQ from "../components/faq";
 
 export default function Home() {
   return (
@@ -19,6 +19,9 @@ export default function Home() {
       <main>
         {/* Hero */}
         <HomeHero />
+
+        {/* Features */}
+        <Features />
 
         {/* Get Started */}
         <GetStarted />
