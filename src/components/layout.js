@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Navbar from "./navbar";
 import Footer from "./footer";
-import { useRouter } from "next/router";
 
 const navigation = [
   { name: "Home", href: "/" },
