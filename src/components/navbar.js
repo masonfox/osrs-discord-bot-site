@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Image from "next/image";
+import CoffeeButton from "./coffeebutton";
 import Link from "next/link";
 import { classNames } from "../utilities";
 
@@ -23,23 +23,9 @@ const Navbar = ({ navigation, activeHref }) => (
                 </Disclosure.Button>
               </div>
               <div className="flex-shrink-0 flex items-center">
-                <div className="block lg:hidden">
-                  {" "}
-                  <Image
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                    alt="Workflow"
-                    height={35}
-                    width={35}
-                  />
-                </div>
-                <div className="hidden lg:block">
-                  <Image
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                    alt="Workflow"
-                    height={150}
-                    width={150}
-                  />
-                </div>
+                <h1 className="text-center text-xl font-bold text-white app-brand">
+                  OSRS Buddy
+                </h1>
               </div>
               <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                 {navigation.map((item) => (
@@ -49,7 +35,7 @@ const Navbar = ({ navigation, activeHref }) => (
                         activeHref == item.href
                           ? "bg-gray-900 text-white"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                        "px-3 py-2 rounded-md text-sm font-medium"
+                        "px-3 py-2 rounded-md text-sm font-medium flex-shrink-0"
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
@@ -59,10 +45,8 @@ const Navbar = ({ navigation, activeHref }) => (
                 ))}
               </div>
             </div>
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
-              <a href="https://www.buymeacoffee.com/osrsbuddy"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=osrsbuddy&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" className="h-10 w-auto" alt="Buy me a beer!" /></a>
-              </div>
+            <div className="hidden sm:flex items-center">
+              <CoffeeButton />
             </div>
           </div>
         </div>
@@ -85,6 +69,9 @@ const Navbar = ({ navigation, activeHref }) => (
                 {item.name}
               </Disclosure.Button>
             ))}
+          </div>
+          <div className="mt-0 pb-5 ml-4">
+            <CoffeeButton />
           </div>
         </Disclosure.Panel>
       </>

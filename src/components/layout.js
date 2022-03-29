@@ -8,7 +8,6 @@ const navigation = [
   { name: "Get Started", href: "/#getstarted" },
   { name: "Commands", href: "/#commands" },
   { name: "FAQ", href: "/#faq" },
-  { name: "About", href: "/#about" },
 ];
 
 export default function Layout({ children }) {
