@@ -2,10 +2,9 @@
 import Link from "next/link";
 
 const GetStarted = () => (
-  <section className="bg-white">
+  <section className="bg-white" id="getstarted">
     <div
-      className="max-w-3xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-0"
-      id="getstarted"
+      className="max-w-3xl mx-auto py-12 px-4 sm:py-24 sm:px-6 lg:px-0"
     >
       <div className="text-center pb-7 border-b border-gray-100">
         <h1 className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tighter lg:text-6xl">
