@@ -69,8 +69,7 @@ const Commands = () => (
             Commands
           </h1>
           <p className="mt-3 text-md lg:text-lg text-indigo-300">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
-            blanditiis sapiente quidem ipsam.
+            The OSRS Buddy commands are there to manage your engagement with the bot! And the best part: you never have to leave Discord!
           </p>
         </div>
         <div className="mt-10 lg:-mt-4 lg:col-span-2 mx-auto">
