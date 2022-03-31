@@ -6,13 +6,6 @@ const HomeHero = () => (
       <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
         <div>
           <div>
-            {/* <Image
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                    alt="Workflow"
-                    dangerouslyallowsvg="true"
-                    height={48}
-                    width={44}
-                  /> */}
             <div className="bg-indigo-600 text-white font-medium rounded text-sm px-5 py-1.5 inline-block">
               Beta!
             </div>
