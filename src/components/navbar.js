@@ -2,6 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import CoffeeButton from "./coffeebutton";
 import Link from "next/link";
+import Image from "next/image";
 import { classNames } from "../utilities";
 
 const Navbar = ({ navigation, activeHref }) => (
@@ -23,8 +24,10 @@ const Navbar = ({ navigation, activeHref }) => (
                 </Disclosure.Button>
               </div>
               <div className="flex-shrink-0 flex items-center">
-                <h1 className="text-center text-xl font-bold text-white app-brand">
-                  OSRS Buddy
+                <Image src="/images/Logo.svg" height={38} width={38}/>
+                <h1 className="ml-1.5 -mt-1 text-center text-2xl text-white">
+                  <span className="font-light mr-1">OSRS</span>
+                  <span className="font-bold">Buddy</span>
                 </h1>
               </div>
               <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
