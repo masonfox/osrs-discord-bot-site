@@ -163,10 +163,9 @@ const Features = () => {
             </svg>
             <div className="flex justify-center drop-shadow-2xl">
               <Image
-                className=""
-                height={520}
-                width={473}
-                src="/images/Cron-Output-Example.png"
+                height={612}
+                width={450}
+                src="/images/Cron-Output.png"
                 alt="Example image output from the bot"
               />
             </div>
