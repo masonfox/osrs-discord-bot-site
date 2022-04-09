@@ -104,8 +104,8 @@ const Features = () => {
             </h3>
             <p className="mt-3 text-lg text-gray-500">
               Whether you&apos;re woodcutting, crushing ToB, or completing clue
-              scrolls, OSRS Buddy watches for player updates that you track on a
-              2-hour cadence and shares those progress updates in your favorite
+              scrolls, OSRS Buddy watches for player updates that you track every
+              2-hours and shares those progress updates on a 2-hour, weekly, and monthly cadence in your favorite
               Discord channel!
             </p>
 
