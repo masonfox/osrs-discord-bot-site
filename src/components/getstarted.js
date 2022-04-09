@@ -61,14 +61,11 @@ const GetStarted = () => (
           <div className="bg-gray-100 px-6 pb-4 pt-9 md:pt-4 rounded w-full self-center md:w-11/12 prose lg:prose-lg drop-shadow">
             <p>Add the RSN&apos;s you want to track!</p>
             <pre className="mb-4">
-              <code>!osrs add &#123;rsn&#125;</code>
+              <code>!osrs add &quot;rsn&quot;</code>
             </pre>
-            <i>
-              Note, if the RSN has spaces in it, use a &quot;<b>+</b>
-              &quot; in place of a space:
-            </i>
+            <p className="text-base">Example:</p>
             <pre>
-              <code>!osrs add zezima+is+lord</code>
+              <code>!osrs add &quot;zezima is lord&quot;</code>
             </pre>
           </div>
         </div>

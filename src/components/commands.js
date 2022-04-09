@@ -26,16 +26,16 @@ const commandList = [
     examples: [],
   },
   {
-    command: "!osrs add {rsn}",
+    command: '!osrs add "rsn"',
     description:
-      "Adds new OSRS players to track on your Discord server. You can use a '+' in place of a space in the RSN you're attempting to add.",
-    examples: ["!osrs add Zezima", "!osrs add Settled+4+President"],
+      "Adds new OSRS players to track on your Discord server.",
+    examples: ['!osrs add "Zezima"', '!osrs add "Settled 4 President"'],
   },
   {
-    command: "!osrs remove {rsn}",
+    command: '!osrs remove "rsn"',
     description:
-      "Removes OSRS players you're currently tracking on your Discord server. As noted above, use a '+' in place of a space.",
-    examples: ["!osrs remove Zulu", "!osrs remove J1mmy+4+VP"],
+      "Removes OSRS players you're currently tracking on your Discord server.",
+    examples: ['!osrs remove "Zulu"', '!osrs remove "J1mmy 4 VP"'],
   },
   {
     command: "!osrs when",
