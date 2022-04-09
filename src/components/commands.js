@@ -38,6 +38,11 @@ const commandList = [
     examples: ['!osrs remove "Zulu"', '!osrs remove "J1mmy 4 VP"'],
   },
   {
+    command: '!osrs recap "rsn" {timeframe}',
+    description: "Returns an image of progress history for a given player over the following timeframe options: day, week, month. This works off of history data and is primarily dependent on the players you are tracking.",
+    examples: ['!osrs recap "McTile" day', '!osrs recap "Xofy" week', '!osrs recap "Ditty Bitty" month']
+  },
+  {
     command: "!osrs when",
     description:
       "Returns the time that the bot will run again, rendering updates. This is in Eastern Standard Time.",
