@@ -2,60 +2,54 @@ import { classNames } from "../utilities";
 
 const commandList = [
   {
-    command: "!osrs",
-    description:
-      "The index command - lists all of the other commands and descriptions. ",
-    examples: [],
-  },
-  {
-    command: "!osrs subscribe",
+    command: "/subscribe",
     description:
       "Subscribes your Discord server and the channel this message is entered into to receive updates of the players you track. If you simply want to change the channel updates are sent to, you can use this command in the new channel.",
     examples: [],
   },
   {
-    command: "!osrs unsubscribe",
+    command: "/unsubscribe",
     description:
       "The opposite of the command above - player progression updates will no longer be shared to your Discord server.",
     examples: [],
   },
   {
-    command: "!osrs list",
+    command: "/players",
     description:
       "Lists all of the active OSRS players that your Discord server is tracking.",
     examples: [],
   },
   {
-    command: '!osrs add "rsn"',
+    command: '/track',
     description:
       "Adds new OSRS players to track on your Discord server.",
-    examples: ['!osrs add "Zezima"', '!osrs add "Settled 4 President"'],
+    examples: [],
   },
   {
-    command: '!osrs remove "rsn"',
+    command: '/drop',
     description:
       "Removes OSRS players you're currently tracking on your Discord server.",
-    examples: ['!osrs remove "Zulu"', '!osrs remove "J1mmy 4 VP"'],
+    examples: [],
   },
   {
-    command: '!osrs recap "rsn" {timeframe}',
+    command: '/recap',
     description: "Returns an image of progress history for a given player over the following timeframe options: day, week, month. This works off of history data and is primarily dependent on the players you are tracking.",
-    examples: ['!osrs recap "McTile" day', '!osrs recap "Xofy" week', '!osrs recap "Ditty Bitty" month']
+    examples: []
   },
   {
-    command: "!osrs when",
+    command: "/when",
     description:
       "Returns the time that the bot will run again, rendering updates. This is in Eastern Standard Time.",
     examples: [],
   },
   {
-    command: "!osrs status",
+    command: "/status",
     description:
       "This is a dump of the bot's data associated with your Discord server.",
     examples: [],
   },
   {
-    command: "!osrs donate",
+    command: "/donate",
     description:
       "❤️ Provides information about how you can donate!",
     examples: [],

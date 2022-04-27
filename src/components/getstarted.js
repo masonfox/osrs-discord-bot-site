@@ -45,9 +45,9 @@ const GetStarted = () => (
             </span>
           </div>
           <div className="bg-gray-100 px-6 pb-4 pt-9 md:pt-4 rounded w-full self-center md:w-11/12 prose lg:prose-lg drop-shadow">
-            <p>Navigate to your desired text channel and subscribe:</p>
+            <p>Subscribe and select a channel to receive updates:</p>
             <pre>
-              <code>!osrs subscribe</code>
+              <code>/subscribe</code>
             </pre>
           </div>
         </div>
@@ -61,11 +61,7 @@ const GetStarted = () => (
           <div className="bg-gray-100 px-6 pb-4 pt-9 md:pt-4 rounded w-full self-center md:w-11/12 prose lg:prose-lg drop-shadow">
             <p>Add the RSN&apos;s you want to track!</p>
             <pre className="mb-4">
-              <code>!osrs add &quot;rsn&quot;</code>
-            </pre>
-            <p className="text-base">Example:</p>
-            <pre>
-              <code>!osrs add &quot;zezima is lord&quot;</code>
+              <code>/track</code>
             </pre>
           </div>
         </div>
