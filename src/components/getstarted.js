@@ -28,7 +28,7 @@ const GetStarted = () => (
               <a
                 className="text-blue-600 font-bold"
                 target="_blank"
-                href="https://bit.ly/osrs-discord-bot"
+                href="https://bit.ly/3kgo3u4"
                 rel="noreferrer"
               >
                 Add the bot
